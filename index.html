@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="index.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Syne+Mono&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-family: Syne Mono;" id="currency-title"></h1>
+        
+        <div class="currency-selection">
+            <select id="fromCurrency">
+
+            </select>
+            
+            <span class="currency-symbol">⇄</span>
+            
+            <select id="toCurrency">
+             
+            </select>
+        </div>
+
+        <div class="amount-section">
+            <input type="number" id="amount" value="1" placeholder="Amount">
+        </div>
+
+        <button onclick="convertCurrency()">Convert</button>
+
+        <h3 class="result" style="font-family: Tinos;">Converted Amount: <span id="result"></span></h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
